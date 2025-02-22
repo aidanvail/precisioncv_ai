@@ -1,8 +1,8 @@
 "use client";
-import { Github, Globe2, Globe2Icon, LucideGlobe2, Mail } from "lucide-react";
+import { Github, Globe2 } from "lucide-react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+{/*import { Button } from "@/components/ui/button";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";*/}
 
 interface FooterLink {
   label: string;
@@ -169,7 +169,7 @@ export function Footer() {
 
           {/* Line 3: MIT Link now points to the GitHub README */}
            <p className="text-center text-sm text-muted-foreground mt-2">
-           © 2025 PrecisionCV AI.{" "}
+           © {currentYear} PrecisionCV AI.{" "}
            <a
            href="https://github.com/maheshpaulj/ResumeItNow/blob/master/README.md"
            target="_blank"
