@@ -82,7 +82,7 @@ const TemplateTabs: FC<{ templates: string[] }> = ({ templates }) => (
 
 export default function HomePage() {
   const templatesRef = useRef<HTMLDivElement>(null);
-  const [resumesCreated, setResumesCreated] = useState(0);
+  const [/*resumesCreated*/, setResumesCreated] = useState(0);
   const templates = ["Modern", "Professional", "Minimal"];
 
   useEffect(() => {
