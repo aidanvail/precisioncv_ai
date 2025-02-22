@@ -9,26 +9,29 @@ import { Analytics } from "@vercel/analytics/react"
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'ResumeItNow - Free Open Source Resume Builder',
-  description: 'Create professional, ATS-friendly resumes for free. No watermarks, no hidden fees. AI-powered resume builder with modern templates.',
-  keywords: 'resume builder, cv maker, free resume, ATS-friendly resume, AI resume builder, professional templates',
-  authors: [{ name: 'Mahesh Paul J' }],
-  creator: 'ResumeItNow',
-  publisher: 'ResumeItNow',
+  title: 'PrecisionCV AI - AI-Powered Precision for a Standout CV',
+  description: 'Create professional, ATS-friendly resumes effortlessly with PrecisionCV AI. No subscriptions, no hidden costs—just powerful AI-driven resume optimization. Get industry-standard templates, smart content suggestions, and seamless formatting for a standout CV. Land your next job with confidence—100% free.',
+  keywords: 'resume builder, cv maker, free resume, ATS-friendly resume, AI resume builder, professional templates, AI CV builder, AI CV maker, Placement dynamicsAI job application tool, career boost, resume formatting, job-winning CV, CV writing assistant, AI-powered job search, modern resume templates, career growth, AI-driven CV improvement, free CV generator, resume AI tool, PrecisionCV AI, AdVentus Group resume software, job search optimisation',
+  authors: [
+    { name: 'Mahesh Paul J' },
+    { name: 'Aidan Venter' }
+  ],
+  creator: 'ResumeItNow and AdVentus App & Software Development',
+  publisher: 'ResumeItNow and AdVentus Group',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://resumeitnow.vercel.app'),
+  metadataBase: new URL('https://precisioncv_ai.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'ResumeItNow - Free Open Source Resume Builder',
-    description: 'Create professional, ATS-friendly resumes for free. No watermarks, no hidden fees. AI-powered resume builder with modern templates.',
+    title: 'PrecisionCV AI - Free CV builder and enhancer',
+    description: 'Create professional, ATS-friendly resumes effortlessly with PrecisionCV AI. No subscriptions, no hidden costs—just powerful AI-driven resume optimization. Get industry-standard templates, smart content suggestions, and seamless formatting for a standout CV. Land your next job with confidence—100% free.',
     url: 'https://resumeitnow.vercel.app',
-    siteName: 'ResumeItNow',
+    siteName: 'PrecisionCV AI',
     images: [
       {
         url: '/assets/ss.png',
@@ -37,13 +40,13 @@ export const metadata: Metadata = {
         alt: 'ResumeItNow Preview',
       },
     ],
-    locale: 'en_US',
+    locale: 'en_UK',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ResumeItNow - Free Open Source Resume Builder',
-    description: 'Create professional, ATS-friendly resumes for free. No watermarks, no hidden fees. AI-powered resume builder with modern templates.',
+    title: 'PrecisionCV AI - Free CV builder and enhancer',
+    description: 'Create professional, ATS-friendly resumes effortlessly with PrecisionCV AI. No subscriptions, no hidden costs—just powerful AI-driven resume optimization. Get industry-standard templates, smart content suggestions, and seamless formatting for a standout CV. Land your next job with confidence—100% free.',
     images: ['/assets/ss.png'],
     creator: '@resumeitnow',
   },

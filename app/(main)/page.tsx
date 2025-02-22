@@ -103,13 +103,15 @@ export default function HomePage() {
       <section className="flex flex-col items-center justify-center px-4 py-24 text-center bg-gradient-to-b from-background to-muted">
         <div className="space-y-2 mb-6">
           <Badge className="mb-4" variant="secondary">
-            100% Free & Open Source
+          100% free. No sign-up. No hidden costs.
           </Badge>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            Create Your Perfect Resume
+          AI-Powered Precision for a Standout CV
           </h1>
-          <p className="text-xl text-muted-foreground max-w-[750px]">
-            Free, open-source resume builder powered by AI. No watermarks, no hidden fees.
+          <p className="text-xl text-muted-foreground ">
+          Create a professional resume in seconds with PrecisionCV AI. 
+          No subscriptions, no hidden fees—just powerful AI-driven enhancements, modern templates, and seamless formatting. 
+          Stand out, get noticed, and take the next step in your career—100% free.
           </p>
         </div>
 
@@ -127,7 +129,7 @@ export default function HomePage() {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
-          <div>
+          {/*<div>
             <p className="text-3xl font-bold text-primary">
             <CountUp 
                 start={0} 
@@ -138,19 +140,19 @@ export default function HomePage() {
               />+
             </p>
             <p className="text-sm text-muted-foreground">Resumes Created</p>
-          </div>
-          <div>
+          </div>*/}
+          {/*<div>
             <p className="text-3xl font-bold text-primary">100%</p>
             <p className="text-sm text-muted-foreground">Free Forever</p>
-          </div>
-          <div>
+          </div>*/}
+          {/*<div>
             <p className="text-3xl font-bold text-primary">ATS</p>
             <p className="text-sm text-muted-foreground">Optimized</p>
-          </div>
-          <div>
+          </div>*/}
+          {/*<div>
             <p className="text-3xl font-bold text-primary">MIT</p>
             <p className="text-sm text-muted-foreground">Licensed</p>
-          </div>
+          </div>*/}
         </div>
       </section>
 
@@ -158,10 +160,9 @@ export default function HomePage() {
       <section className="py-24 bg-muted/50 flex flex-col items-center">
         <div className="container px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Why Choose ResumeItNow?</h2>
+            <h2 className="text-3xl font-bold mb-4">How PrecisionCV AI Helps You Stand Out</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Built with modern tools and designed for everyone. Create professional resumes 
-              without the hassle of watermarks or hidden fees.
+            Built with cutting-edge AI, PrecisionCV AI makes resume creation effortless. No fees, no sign-ups, no watermarks—just a powerful tool to help you craft a professional, job-winning resume in minutes.
             </p>
           </div>
 
@@ -170,10 +171,10 @@ export default function HomePage() {
               icon={<Layout className="h-6 w-6 text-primary" />}
               title="Professional Templates"
               features={[
-                "ATS-friendly designs",
-                "Multiple layout options",
-                "Customizable sections",
-                "Print-ready formats"
+                "Sleek, modern designs",
+                "Customisable sections",
+                "Print-ready & PDF export",
+                "Built for impact"
               ]}
             />
             <FeatureCard
@@ -181,8 +182,8 @@ export default function HomePage() {
               title="AI-Powered"
               features={[
                 "Smart content suggestions",
-                "Auto Generate Content",
-                "Keyword optimization",
+                "AI-enhanced phrasing",
+                "Keyword optimisation",
                 "Powered by Llama 3.1"
               ]}
             />
@@ -192,8 +193,8 @@ export default function HomePage() {
               features={[
                 "No sign-up required",
                 "100% free, forever",
-                "Export to PDF",
-                "Open-source code"
+                "Instant improvements",
+                "Always evolving"
               ]}
             />
           </div>
@@ -204,10 +205,9 @@ export default function HomePage() {
       <section ref={templatesRef} className="py-24 scroll-mt-16 flex flex-col items-center">
         <div className="container px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Professional Templates</h2>
+            <h2 className="text-3xl font-bold mb-4">Resume Templates</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Choose from our collection of ATS-optimized templates designed to help you 
-              stand out while ensuring compatibility with applicant tracking systems.
+            Choose from our professionally designed, ATS-optimised templates crafted to make your resume stand out while ensuring seamless compatibility with applicant tracking systems.
             </p>
           </div>
 
@@ -218,24 +218,24 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-primary text-primary-foreground flex flex-col items-center">
-        <div className="container px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Create Your Professional Resume?
-          </h2>
-          <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-            Join thousands of job seekers who have successfully created their resumes using 
-            our platform. No credit card required, no hidden fees.
-          </p>
-          <Link 
-            href="/resume/create"
-            className="inline-flex items-center justify-center rounded-md bg-background text-primary px-8 py-2 text-lg font-medium shadow transition-colors hover:bg-background/90"
-          >
-            Create Your Resume Now
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Link>
-        </div>
-      </section>
+<section className="py-24 bg-cta text-cta-foreground flex flex-col items-center">
+  <div className="container px-4 text-center">
+    <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      Ready to Elevate Your Career with PrecisionCV AI
+    </h2>
+    <p className="text-cta-foreground/80 mb-8 max-w-2xl mx-auto">
+      Get started today — your future awaits.
+    </p>
+    <Link 
+      href="/resume/create"
+      className="inline-flex items-center justify-center rounded-md bg-background text-primary px-8 py-2 text-lg font-medium shadow transition-colors hover:bg-background/90"
+    >
+      Create Your Resume Now
+      <ArrowRight className="ml-2 h-5 w-5" />
+    </Link>
+  </div>
+</section>
+
     </main>
   );
 }

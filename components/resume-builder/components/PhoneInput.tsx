@@ -13,8 +13,8 @@ interface PhoneInputComponentProps {
 export const PhoneInputComponent = ({ register, errors }: PhoneInputComponentProps) => {
     const storedData = localStorage.getItem("resumeitnow_form_data");
     const defaultPhone = storedData ? JSON.parse(storedData)?.formData?.personalDetails?.phone || "" : "";
-    const [defaultCountryCode, phone] = defaultPhone.split(" ");
-    const [countryCode, setCountryCode] = useState(defaultCountryCode || "+91");
+    const [defaultCountryCode, phone] = defaultPhone.split("ZA");
+    const [countryCode, setCountryCode] = useState(defaultCountryCode || "+27");
     const [phoneNumber, setPhoneNumber] = useState(phone);
   
     useEffect(() => {
@@ -123,7 +123,7 @@ export const PhoneInputComponent = ({ register, errors }: PhoneInputComponentPro
           <Input 
             value={phoneNumber}
             onChange={(e) => setPhoneNumber(e.target.value)}
-            placeholder="123-456-7890"
+            placeholder="81 111 1111"
           />
         </div>
         {errors.personalDetails?.phone && 

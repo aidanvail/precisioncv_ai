@@ -34,8 +34,8 @@ interface NavLink {
 
 const navLinks: NavLink[] = [
   { title: 'Home', href: '/' },
-  { title: 'About', href: '/about' },
-  { title: 'Create', href: '/resume/create' },
+  //{ title: 'About', href: '/about' },
+ // { title: 'Create', href: '/resume/create' },
 ];
 
 export default function Navbar() {
@@ -136,7 +136,7 @@ export default function Navbar() {
               href="/"
               className="flex items-center space-x-2 font-bold text-2xl hover:opacity-90 transition-opacity"
             >
-              ResumeItNow
+              PrecisionCV AI
             </Link>
           </div>
           <div className="hidden md:flex md:gap-2">

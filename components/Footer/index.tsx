@@ -1,5 +1,5 @@
 "use client";
-import { Github, Mail } from "lucide-react";
+import { Github, Globe2, Globe2Icon, LucideGlobe2, Mail } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
@@ -22,11 +22,11 @@ interface SocialLink {
 }
 
 const productLinks: FooterSection = {
-  title: "Product",
+  title: "Resources",
   links: [
-    { label: "Home", href: "/" },
-    { label: "About", href: "/about" },
-    { label: "Create", href: "/resume/create" },
+    { label: "Find Jobs", href: "https://placedynamics.co.za/jobs.html" },
+    // { label: "Tool 1", href: "/about" },
+    // { label: "Tool 2", href: "/resume/create" },
   ],
 };
 
@@ -34,23 +34,24 @@ const supportLinks: FooterSection = {
   title: "Support",
   links: [
     { 
-      label: "Contact Dev",
-      href: "mailto:mahesh.paul.j@gmail.com",
+      label: "Contact",
+      href: "mailto:aidan@adventusgroup.co.za",
       external: true
     },
   ],
 };
 
+// Updated socialLinks: Changed GitHub link and replaced email with a website link.
 const socialLinks: SocialLink[] = [
   {
     platform: "GitHub",
-    href: "https://github.com/maheshpaulj/ResumeItNow",
+    href: "https://github.com/Adventusgroup",
     icon: <Github className="h-5 w-5" />,
   },
   {
-    platform: "Email",
-    href: "mailto:mahesh.paul.j@gmail.com",
-    icon: <Mail className="h-5 w-5" />,
+    platform: "Website",
+    href: "https://adventusgroup.co.za",
+    icon: <Globe2 className="h-5 w-5" />,
   },
 ];
 
@@ -110,21 +111,21 @@ export function Footer() {
         <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
           <Link href="/" className="group">
             <h2 className="text-xl font-bold group-hover:opacity-90 transition-opacity">
-              ResumeItNow
+            PrecisionCV AI
             </h2>
           </Link>
           <p className="text-sm text-muted-foreground mt-1">
-            Create professional resumes with ease
+          AI-Powered Precision for a Standout CV
           </p>
           <div className="mt-4">
-            <Button
+            {/*<Button
               variant="outline"
               size="sm"
               className="text-sm"
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               Back to top
-            </Button>
+            </Button>*/}
           </div>
         </div>
 
@@ -137,10 +138,48 @@ export function Footer() {
 
       <div className="border-t">
         <div className="container py-4 px-4">
+          {/* Line 1 */}
           <p className="text-center text-sm text-muted-foreground">
-            © {currentYear} ResumeItNow. All rights reserved.
+            A Product of the{" "}
+            <a
+              href="https://adventusgroup.co.za"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              AdVentus Group
+            </a>
+            . Designed by
           </p>
-        </div>
+
+          {/* Line 2: Clickable Logo */}
+          <p className="text-center mt-2">
+            <a
+              href="https://adventusgroup.co.za"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/assets/logo.png"
+                alt="AdVentus Group Logo"
+                className="mx-auto h-16"
+              />
+            </a>
+          </p>
+
+          {/* Line 3: MIT Link now points to the GitHub README */}
+           <p className="text-center text-sm text-muted-foreground mt-2">
+           © 2025 PrecisionCV AI.{" "}
+           <a
+           href="https://github.com/maheshpaulj/ResumeItNow/blob/master/README.md"
+           target="_blank"
+           rel="noopener noreferrer"
+            className="underline"
+      >
+             Licensed under MIT
+          </a>
+         </p>
+       </div>
       </div>
     </footer>
   );
