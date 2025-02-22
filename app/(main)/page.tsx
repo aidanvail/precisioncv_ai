@@ -24,7 +24,7 @@ interface ResumeCount {
 
 async function getResumesCreated(): Promise<number> {
   try {
-    const infoDoc = await getDoc(doc(db, "info", "resumesCreated"));
+    const infoDoc = await getDoc(doc(db, "info"/*, "resumesCreated"*/));
     return infoDoc.exists() ? (infoDoc.data() as ResumeCount).count : 0;
   } catch (error) {
     console.error("Error fetching resumes count:", error);
@@ -85,13 +85,13 @@ export default function HomePage() {
   const [resumesCreated, setResumesCreated] = useState(0);
   const templates = ["Modern", "Professional", "Minimal"];
 
-  {/*useEffect(() => {
+  useEffect(() => {
     const fetchResumesCount = async () => {
       const count = await getResumesCreated();
       setResumesCreated(count);
     };
     fetchResumesCount();
-  }, []);*/}
+  }, []);
 
   const scrollToTemplates = () => {
     templatesRef.current?.scrollIntoView({ behavior: 'smooth' });
