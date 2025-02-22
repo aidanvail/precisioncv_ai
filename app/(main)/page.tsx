@@ -16,7 +16,7 @@ import { doc, getDoc } from "firebase/firestore"
 import Link from "next/link"
 import type { FC } from 'react'
 import Image from 'next/image'
-import CountUp from 'react-countup'
+{/*import CountUp from 'react-countup'*/}
 
 interface ResumeCount {
   count: number
@@ -85,13 +85,13 @@ export default function HomePage() {
   const [resumesCreated, setResumesCreated] = useState(0);
   const templates = ["Modern", "Professional", "Minimal"];
 
-  useEffect(() => {
+  {/*useEffect(() => {
     const fetchResumesCount = async () => {
       const count = await getResumesCreated();
       setResumesCreated(count);
     };
     fetchResumesCount();
-  }, []);
+  }, []);*/}
 
   const scrollToTemplates = () => {
     templatesRef.current?.scrollIntoView({ behavior: 'smooth' });
