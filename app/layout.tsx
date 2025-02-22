@@ -23,14 +23,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://precisioncv_ai.vercel.app'),
+  metadataBase: new URL('https://precisioncv-ai-hgmg.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'PrecisionCV AI - Free CV builder and enhancer',
     description: 'Create professional, ATS-friendly resumes effortlessly with PrecisionCV AI. No subscriptions, no hidden costs—just powerful AI-driven resume optimization. Get industry-standard templates, smart content suggestions, and seamless formatting for a standout CV. Land your next job with confidence—100% free.',
-    url: 'https://resumeitnow.vercel.app',
+    url: 'https://precisioncv-ai-hgmg.vercel.app',
     siteName: 'PrecisionCV AI',
     images: [
       {
