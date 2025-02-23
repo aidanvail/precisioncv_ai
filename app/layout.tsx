@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: 'PrecisionCV AI - Free CV builder and enhancer',
     description: 'Create professional, ATS-friendly resumes effortlessly with PrecisionCV AI. No subscriptions, no hidden costs—just powerful AI-driven resume optimization. Get industry-standard templates, smart content suggestions, and seamless formatting for a standout CV. Land your next job with confidence—100% free.',
     images: ['/assets/ss.png'],
-    creator: '@resumeitnow',
+    creator: {/*'@resumeitnow'*/},
   },
   robots: {
     index: true,
@@ -65,6 +65,7 @@ export const metadata: Metadata = {
     google: 'IVOjL--iVz33j73JnMvQT2vZsRoEje6C9GQGxF8BlxQ',
   },
   category: 'technology',
+  
 }
 
 export default async function RootLayout({
@@ -82,7 +83,7 @@ export default async function RootLayout({
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#ffffff" />
-        <meta name="google-site-verification" content="IVOjL--iVz33j73JnMvQT2vZsRoEje6C9GQGxF8BlxQ" />
+        <meta name="google-site-verification" content="5_mSOA-rnfJO_IUcgY5XyrXMAQOpkywbCIouWAjB-M8" />
         {/* Schema.org markup for Google */}
         <script
           type="application/ld+json"
